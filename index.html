@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us">
-​
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
+  <title>Student Bio</title>
+  <link rel="stylesheet" type="text/css" href="asset/reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+
 <body>
   <header>
     <h1>Student Bio</h1>
   </header>
-  <div>
-    <section class="a">
-      <h2>Your Name</h2>
-      <img src="https://placehold.it/200x200" alt="Your Name">
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+
+  <div class="container">
+
+    <section id="main-bio">
+
+      <h2>Bryan Ha</h2>
+
+      <img 
+      id="bio-image"
+      width="200px"
+      class="img-circle"
+      src="file:///Users/bryan-ha/Downloads/DSC_5215%202.JPG" 
+      alt="Bryan Ha"
+      >
+
+      <p class="bg-warning">Greetings! I was born and raised in Viet Nam. I immigranted to United States when i was 
+          15 years old. I went to high shool here in San Diego for 3 three years. Then, I went to
+          community college for three years and UCSd for another three years. I graduated UCSD with
+          a bachelor degree in Biochemistry/Chemistry in June 2019.
+          <br>
+          I am currently working as research associate at HD Biosciences Inc. After working in the
+          researching field for about a year. I realize that research isn't for me; therefore, i 
+          signed up for UCSD Extension Bootcamp with a hope of getting a carreer change.
+          <br>
+          A little about myself, I am not really smart; however, I consider my self a try hard
+          man. I like to play badminton when I have free time. I also like to listen to music when
+          I have time to relax. This is one of my favorite song: <a href="https://www.youtube.com/watch?v=rXPfovXw2tw"> Back at one by Brian McKnight.</a></p>
     </section>
-​
-    <section class="b">
+
+    <section id="contact-info">
       <h2>Contact Info</h2>
       <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        <li><strong>Email:</strong> <a id="email" href="#">hxha@ucsd.edu</a></li>
+        <li><strong>Github:</strong> <a id="email" href="#">hxha0817</a></li>
+        <li><strong>Portfolio:</strong> <a id="email" href="#">coming soon</a></li>
       </ul>
     </section>
   </div>
-​
-</body>
-​
-</html>
-<style>
-    h1 {
-        background-color: black;
-        color: aliceblue;
-        text-align: center;
-    }
 
-    div {
-        background-color: gray;
-        column-count: 2;
-    }
-</style>
+</body>
+
+</html>
